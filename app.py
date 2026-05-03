@@ -12,6 +12,8 @@ import requests
 from agents.threat_agent import ThreatAnalysisAgent
 from rag.knowledge_base import SecurityKnowledgeBase
 
+from dotenv import load_dotenv
+load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 
 st.set_page_config(
